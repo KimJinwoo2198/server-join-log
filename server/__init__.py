@@ -1,6 +1,4 @@
 import os
-import sys
-import logging
 ENV = bool(os.environ.get('ENV', False))
 
 if ENV:
@@ -12,7 +10,3 @@ else:
 
     TOKEN            = Config.TOKEN
     commandInt       = Config.commandInt
-
-EXTENSIONS = list(EXTENSIONS)
-
-BOT_NAME_TAG_VER = "%s%s" %(BOT_NAME, BOT_TAG)
